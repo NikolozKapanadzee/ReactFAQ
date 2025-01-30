@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Paragraph from './components/paragraph/paragraph'
-
+import Paragraph from '../components/paragraph/Paragraph';
 function App() {
   
 
