@@ -1,0 +1,137 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 327px;
+  flex-shrink: 0;
+  border-radius: 23px;
+  background: #fff;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 60px;
+}
+.ghost_img {
+  position: absolute;
+  top: 0%;
+  right: 15%;
+}
+.main_img {
+  position: absolute;
+  top: -20%;
+  right: 15%;
+}
+.title {
+  color: #1e1f36;
+  font-family: "Kumbh Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 132px;
+}
+.quote_and_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 279px;
+  margin-top: 40px;
+  gap: 19px;
+  max-height: 251px;
+}
+.quote_box {
+  border-bottom: 1px solid #e8eaea;
+  height: 35px;
+  width: 100%;
+  max-width: 279px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+.quote_box.clicked {
+  height: 90px;
+}
+.quote {
+  width: 100%;
+  max-width: 279px;
+  color: #787887;
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 13px;
+  display: none;
+}
+.author {
+  color: #4b4c5f;
+  font-family: "Kumbh Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quote_box.clicked .quote {
+  display: block;
+}
+.desk_ghost {
+  display: none;
+}
+.desk_main {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .ghost_img {
+    display: none;
+  }
+  .main_img {
+    display: none;
+  }
+  .desk_ghost {
+    display: block;
+  }
+  .desk_main {
+    display: block;
+    position: absolute;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1024px;
+    height: 509px;
+    flex-shrink: 0;
+    border-radius: 23px;
+    background: #fff;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+    position: relative;
+    gap: 120px;
+  }
+  .container {
+    width: 100%;
+    max-width: 327px;
+    flex-shrink: 0;
+    border-radius: 23px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    box-shadow: none;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 45px;
+  }
+}
